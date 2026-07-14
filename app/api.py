@@ -13,6 +13,7 @@ from app.service import ExpenseService
 async def lifespan(app: FastAPI):
     create_tables()
     yield
+    
 
 
 app = FastAPI(title="Fenmo - Expense Tracker API", lifespan=lifespan)
