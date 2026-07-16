@@ -16,7 +16,7 @@ async def lifespan(app: FastAPI):
     
 
 
-app = FastAPI(title="Fenmo - Expense Tracker API", lifespan=lifespan)
+app = FastAPI(title="Fenmo  - Expense Tracker API", lifespan=lifespan)
 service = ExpenseService(SessionLocal)
 
 
