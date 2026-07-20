@@ -40,6 +40,7 @@ def list_expenses(
 
 @app.get("/expenses/summary", response_model=SummaryResponse)
 def get_summary():
+
     return service.get_summary()
 
 
