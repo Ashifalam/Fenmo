@@ -12,6 +12,7 @@ from app.service import ExpenseService
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     create_tables()
+
     yield
     
 
